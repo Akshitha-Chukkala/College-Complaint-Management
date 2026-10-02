@@ -1,0 +1,29 @@
+{
+  "name": "college-complaint-management",
+  "version": "1.0.0",
+  "description": "CampusResolve - College Complaint Management System",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "seed": "cd server && npm run seed"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "complaint-management",
+    "campusresolve",
+    "college",
+    "nextjs",
+    "express",
+    "mongodb"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "nodemailer": "^10.0.13",
+    "socket.io-client": "^4.8.4"
+  }
+}
